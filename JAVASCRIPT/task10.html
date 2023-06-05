@@ -4,45 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task-10 JavaScript</title>
 </head>
 <body>
+    <div id="output"><div></div>
     <script>
-        // concat method
-const array1 = [1, 2, 3];
-const array2 = [4, 5, 6];
-const newArray = array1.concat(array2);
-console.log(newArray); // Output: [1, 2, 3, 4, 5, 6]
+        var string = "hello";
+        function outputToPage() {
+            $('#output').append(string + "<br/>");
+        }
+        
+        var arr1 = [10,20,30]
+        var arr2 = [40,50,60]
+
+        var arr3 = arr1.concat(arr2);
+        console.log("Concate Method:")
+        console.log(arr3)
+        document.write("Concat Method:<br/>")
+        document.write(arr3+"<br/>")
+        document.write("<br/><hr/><br/>")
 
 
-const numbers = [1, 2, 3, 4, 5];
-numbers.copyWithin(0, 3); // Copies values from index 3 to the beginning of the array
-console.log(numbers); // Output: [4, 5, 3, 4, 5]
+        console.log("CopyWithIn Method:")
+        console.log(arr3.copyWithin(3,0,6))
+        document.write("CopyWithIn Method:<br/>")
+        document.write(arr3.copyWithin(3,0,6)+"<br/>")
+        document.write("<br/><hr/><br/>")
 
-// map method
-numbers = [1, 2, 3, 4, 5];
-const multipliedNumbers = numbers.map(num => num * 2);
-console.log(multipliedNumbers); // Output: [2, 4, 6, 8, 10]
 
-// every method
-numbers = [1, 2, 3, 4, 5];
-const allEven = numbers.every(num => num % 2 === 0);
-console.log(allEven); // Output: false
+        console.log("Map Method:")
+        arr3.map((t)=>{
+            console.log(t);
+        })
+        document.write("Map Method:<br/>")
+        arr3.map((t)=>{
+            document.write(t+"<br/>");
+        })
+        document.write("<br/><hr/><br/>")
 
-// some method
-numbers = [1, 2, 3, 4, 5];
-const hasEven = numbers.some(num => num % 2 === 0);
-console.log(hasEven); // Output: true
+        
+        console.log("Every Method")
+        console.log(arr3.every((i)=>{
+            i>30;
+        }))
+        document.write("Every Method:<br/>")
+        document.write(arr3.every((i)=>{
+            i>30;
+        })+"<br/>")
+        document.write("<br/><hr/><br/>")
 
-// filter method
-numbers = [1, 2, 3, 4, 5];
-const evenNumbers = numbers.filter(num => num % 2 === 0);
-console.log(evenNumbers); // Output: [2, 4]
+        
+        console.log("Some Method")
+        console.log(arr3.some((i)=>{
+            i>30;
+        }))
+        document.write("Every Method:<br/>")
+        document.write(arr3.every((i)=>{
+            i>30;
+        })+"<br/>")
+        document.write("<br/><hr/><br/>")
 
-numbers = [1, 2, 3, 4, 5];
-const foundNumber = numbers.find(num => num > 3);
-console.log(foundNumber); // Output: 4
 
+        console.log("Filter Method")
+        console.log(arr3.filter((i)=>{
+            return i>15;
+        }))
+        document.write("Filter Method:<br/>")
+        document.write(arr3.filter((i)=>{
+            return i>15;
+        })+"<br/>")
+        document.write("<br/><hr/><br/>")
+
+
+        console.log("Find Method")
+        console.log(arr3.find((a)=>{
+            return a>10;
+        }))
+        document.write("Find Method:<br/>")
+        document.write(arr3.find((a)=>{
+            return a>10;
+        })+"<br/>")
+        document.write("<br/><hr/><br/>")
+
+
+        console.log("findIndex Method")
+        console.log(arr3.findIndex((i)=>{
+            return i==20;
+        }))
+        document.write("findIndex Method:<br/>")
+        document.write(arr3.findIndex((i)=>{
+            return i==20;
+        })+"<br/>")
+        document.write("<br/><hr/><br/>")
+
+
+        console.log("indexOf Method")
+        console.log(arr3.indexOf(20))
+        document.write("indexOf Method:<br/>")
+        document.write(arr3.indexOf(20)+"<br/>")
+        document.write("<br/><hr/><br/>")
+
+
+        console.log("lastIndexOf Method")
+        console.log(arr3.lastIndexOf(20))
+        document.write("lastIndexOf Method:<br/>")
+        document.write(arr3.lastIndexOf(20)+"<br/>")
+        document.write("<br/><hr/><br/>")
+        
+        
+        console.log("Push Method")
+        arr3.push(100)
+        console.log(arr3)
+        document.write("Push Method:<br/>")
+        document.write(arr3+"<br/>")
+        document.write("<br/><hr/><br/>")
+        
+        
+        console.log("Pop Method")
+        arr3.pop()
+        console.log(arr3)
+        document.write("Pop Method:<br/>")
+        document.write(arr3+"<br/>")
+        document.write("<br/><hr/><br/>")
+        
+        
+        console.log("Shift Method")
+        arr3.shift()
+        console.log(arr3)
+        document.write("Shift Method:<br/>")
+        document.write(arr3+"<br/>")
+        document.write("<br/><hr/><br/>")
     </script>
 </body>
 </html>
