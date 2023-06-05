@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+    <style>
+      body{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+        .rectangle {
+            border: 5px solid blue;
+            border-top: none;
+            height: 400px;
+            width: 600px;
+            position: relative;
+        }
+        
+        .frame {
+            border: 2px solid black;
+          border-top:none;
+            position: absolute;
+            background-color: transparent;
+        }
+        
+        .frame1 {
+            height: 200px;
+            width: 40%;
+            top: 0;
+            left: 0;
+        }
+        
+        .frame2 {
+            height: 195px;
+            width: 40%;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .frame3 {
+            height: 400px;
+          border-left:none;
+          border-right:none;
+            width: 30%;
+            top: 0;
+            right: 175px;
+        }
+        
+        .frame4 {
+            height: 400px;
+            width: 29%;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangle">
+        <div class="frame frame1"><p style="font-size:30px; padding:10px;"><b>Frame 1</b><p>
+          <p style="padding:10px;">Contents of Frame 1</p>
+        </div>
+        <div class="frame frame2"><p style="font-size:30px; padding:10px;"><b>Frame 2</b><p>
+          <p style="padding:10px;">Contents of Frame 2</p>
+      
+      </div>
+        <div class="frame frame3"><p style="font-size:30px; padding:10px;"><b>Frame 3</b><p>
+          <p style="padding:10px;">Contents of Frame 3</p>
+      
+      </div>
+        <div class="frame frame4"><p style="font-size:30px; padding:10px;"><b>Frame 4</b><p>
+          <p style="padding:10px;">Contents of Frame 4</p>
+      
+      </div>
+    </div>
+</body>
+</html>
